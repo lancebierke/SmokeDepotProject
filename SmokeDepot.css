@@ -1,55 +1,99 @@
 body {
-    font-family: "Open Sans", sans-serif; }
-  
-  h1, h2, h3 {
-    font-family: "Lobster", cursive; }
-  
-  h2 {
-    color: #3046C5; }
-  
-  header h2 {
-    color: #CEC8FF; }
-  
-  .site-footer {
-    background-image: linear-gradient(#CEC8FF, white);
-    padding: 20px 0; }
-  
-  .jumbotron {
-    margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
-    color: white; }
-  
-  .row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px; }
-  
-  .navbar {
-    background-color: #901CAD; }
-  
-  .tab-content {
-    border: 1px solid #DDD;
-    border-top: none;
-    padding: 10px; }
-  
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); }
-  
-  .carousel {
-    border: solid #5637dd; }
-  
-  #carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100; }
-  
-  #reserveModal .modal-header {
-    background-color: #17A2B8;
-    color: white; }
-  
-  #loginModal .modal-header {
-    background-color: #901CAD;
-    color: white; }
-  
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive;
+}
+
+h2 {
+  color: #3046c5;
+}
+
+header h2 {
+  color: #cec8ff;
+}
+
+.site-footer {
+  background-image: linear-gradient(#cec8ff, white);
+  padding: 20px 0;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
+  color: white;
+  position: absolute;
+}
+
+.row-content {
+  padding: 0 0 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.navbar {
+  background-color: #901cad;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+}
+
+.tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 10px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+  border: solid #5637dd;
+  width: 100%;
+  height: 100%;
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+#reserveModal .modal-header {
+  background-color: #17a2b8;
+  color: white;
+}
+
+#loginModal .modal-header {
+  background-color: #901cad63;
+  color: white;
+}
+
+#smokeDepotNavBar {
+  justify-content: flex-end;
+}
+.borderRight {
+  border-right: 1px solid black;
+  width: 100px;
+  justify-content: center;
+  display: flex;
+}
+.windowWidth {
+  width: 99.8vw;
+  padding-right: 0 !important;
+  top: 0 !important;
+}
+.navBarImage {
+  width: auto;
+  height: 100px;
+}  
+.opacity {
+  background-color: transparent !important;
+}
