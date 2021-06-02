@@ -89,15 +89,15 @@
 
     <div class="row row-content">
         <div class="col-sm-12 windowWidth">
-            <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-                <ol class="carousel-indicators">
-                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#homeCarousel" data-slide-to="1"></li>
-                    <li data-target="#homeCarousel" data-slide-to="2"></li>
-                </ol>
+            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                <ul class="lanceIndicators">
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </ul>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/DisplayWall3.jpeg" alt="DisplayWall3" />
+                        <img class="d-block w-100" src="images/DisplayWall1.jpeg" alt="DisplayWall1" />
                         <div class="carousel-caption">
                             <h3>Store Front</h3>
                             <p class="d-none d-sm-block">All Your Tobacco Needs!</p>
@@ -117,7 +117,6 @@
                             <h3>Full View</h3>
                             <p class="d-none d-sm-block">Come on in!</p>
                         </div>
-
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
@@ -143,34 +142,23 @@
             </button>
             <div class="collapse navbar-collapse" id="smokeDepotNavBar">
                 <ul class="navbar-nav">
-                    <li class="nav-item borderRight active"><a class="nav-link" href="shop.html"><i
+                    <li class="nav-item borderRight active"><a class="nav-link text-light" href="shop.html"><i
                                 class="fa fa-home fa-lg"></i>
                             Shop</a>
                     </li>
-                    <li class="nav-item borderRight"><a class="nav-link" href="about.html"><i
+                    <li class="nav-item borderRight"><a class="nav-link text-light" href="about.html"><i
                                 class="fa fa-info fa-lg"></i>
                             About</a></li>
-                    <li class="nav-item borderRight"><a class="nav-link" href="where.html"><i
+                    <li class="nav-item borderRight"><a class="nav-link text-light" href="where.html"><i
                                 class="fa fa-list fa-lg"></i>
                             Where?</a></li>
-                    <li class="nav-item "><a class="nav-link" href="contact.html"><i
+                    <li class="nav-item"><a class="nav-link text-light" href="contact.html"><i
                                 class="fa fa-address-card fa-lg"></i>
                             Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <div class="container">
 
@@ -180,7 +168,7 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="" alt="breadcrumb trail thumb" />
+                    <img class="d-flex mr-3 img-thumbnail" src="images/FrontDoors.jpeg" alt="breadcrumb trail thumb" />
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
                         <p>Explore our growing database of curated campsites and leave your own reviews!</p>
@@ -201,7 +189,7 @@
                     pristine
                     React Lake is a favorite for fly fishers.</p>
             </div>
-            <img class="d-flex ml-3 img-thumbnail" src="" alt="reactlakethumb" />
+            <img class="d-flex ml-3 img-thumbnail" src="images/StoreView.jpeg" alt="reactlakethumb" />
         </div>
 
         <div class="row row-content align-items-center">
@@ -210,7 +198,7 @@
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="" alt="Bootsrap Outfitters" />
+                    <img class="d-flex mr-3 img-thumbnail" src="images/DisplayWall3.jpeg" alt="Bootsrap Outfitters" />
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
                         <p>Bootstrap Outfitters supplies you with gear you need at prices you can't beat.
@@ -220,6 +208,17 @@
             </div>
         </div>
 
+        <form>
+            <div>
+                <h2 class="textCenter">Sign up For Deals!</h2>
+                <div class="signUp">
+                    <input type="text" id="emailSubmit" placeholder="email@domain.com" />
+                    <input type="text" id="nameSubmit" placeholder="Full Name" />
+                    <input type="submit" id="dataSubmit" />
+                </div>
+            </div>
+        </form>
+
     </div>
 
     <footer class="site-footer">
@@ -228,9 +227,9 @@
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="homepage.html">Home</a></li>
-                        <li><a href="about.html">Shop</a></li>
-                        <li><a href="where.html">Where</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="where.html">Where?</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -246,10 +245,11 @@
                             class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+7023334870"><i class="fa fa-phone"></i>
+                    <a role="button" class="btn btn-link text-light" href="tel:+7023334870"><i class="fa fa-phone"></i>
                         (702) 333-4870</a><br />
-                    <a role="button" class="btn btn-link" href="smokedepot@gmail.com"><i
-                            class="fa fa-envelope-o"></i> smokedepot@gmail.com</a>
+                    <a role="button" class="btn btn-link text-light" href="smokedepot@gmail.com"><i
+                            class="fa fa-envelope-o"></i>
+                        smokedepot@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -260,7 +260,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="SmokeDepot.js"></script>
     <!-- endbuild -->
 
 </body>

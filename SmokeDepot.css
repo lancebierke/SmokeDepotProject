@@ -18,8 +18,9 @@ header h2 {
 }
 
 .site-footer {
-  background-image: linear-gradient(#cec8ff, white);
+  background-image: radial-gradient(silver, black);
   padding: 20px 0;
+  color: white;
 }
 
 .jumbotron {
@@ -38,6 +39,7 @@ header h2 {
 
 .navbar {
   background-color: #901cad;
+
   position: absolute;
   width: 100vw;
   top: 0;
@@ -93,7 +95,46 @@ header h2 {
 .navBarImage {
   width: auto;
   height: 100px;
-}  
+}
 .opacity {
   background-color: transparent !important;
+}
+a {
+  color: white;
+}
+.signUp {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.textCenter {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.lanceIndicators {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* background-color: #fff; */
+  /* border: red solid 1px; */
+  position: absolute;
+  z-index: 1000000;
+  bottom: 20%;
+}
+
+.indicator {
+  width: 50px;
+  height: 15px;
+  background-color: #fff;
+  opacity: 0.4;
+  border-radius: 5px;
+}
+
+.solid {
+  opacity: 1 !important;
+}
+
+.indicator:not(:first-child) {
+  margin-left: 25px;
 }
