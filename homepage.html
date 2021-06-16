@@ -160,21 +160,124 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="carousel-container shopImages">
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Discover & Review</h2>
+            <div>
+                <h2 class="text-center pb-3">Available Inventory</h2>
             </div>
-            <div class="col">
+            <!-- Container for the image gallery -->
+            <div class="carousel-container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 10</div>
+                    <img src="images/blueChromePipe.jfif" style="width:100%" alt="love" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 10</div>
+                    <img src="images/bluePipe.jfif" style="width:100%" alt="love" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 10</div>
+                    <img src="images/blueWavePipe.jfif" style="width:100%" alt="love" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 10</div>
+                    <img src="images/brownAndWhitePipe.jfif" style="width:100%" alt="love" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 10</div>
+                    <img src="images/burntPipe.jfif" style="width:100%" alt="love" />
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 10</div>
+                    <img src="images/clearSkeletonPipe.jfif" style="width:100%" alt="love" />
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="images/honeycombPipe.jfif" style="width:100%" alt="love" />
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="images/mushroomPipe.jfif" style="width:100%" alt="love" />
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="images/orangeFirePipe.jfif" style="width:100%" alt="love" />
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="images/orangeSkullPipe.jfif" style="width:100%" alt="love" />
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/blueChromePipe.jfif" style="width:100%"
+                            onclick="currentSlide(1)" alt="The Woods" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/bluePipe.jfif" style="width:100%" onclick="currentSlide(2)"
+                            alt="Cinque Terre" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/blueWavePipe.jfif" style="width:100%"
+                            onclick="currentSlide(3)" alt="Mountains and fjords" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/brownAndWhitePipe.jfif" style="width:100%"
+                            onclick="currentSlide(4)" alt="Northern Lights" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/burntPipe.jfif" style="width:100%" onclick="currentSlide(5)"
+                            alt="Nature and sunrise" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/clearSkeletonPipe.jfif" style="width:100%"
+                            onclick="currentSlide(6)" alt="Snowy Mountains" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/honeycombPipe.jfif" style="width:100%"
+                            onclick="currentSlide(7)" alt="Snowy Mountains" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/mushroomPipe.jfif" style="width:100%"
+                            onclick="currentSlide(8)" alt="Snowy Mountains" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/orangeFirePipe.jfif" style="width:100%"
+                            onclick="currentSlide(9)" alt="Snowy Mountains" />
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/orangeSkullPipe.jfif" style="width:100%"
+                            onclick="currentSlide(10)" alt="Snowy Mountains" />
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="images/FrontDoors.jpeg" alt="breadcrumb trail thumb" />
+                    <img class="d-flex mr-3 img-thumbnail" src="images/FrontDoors.jpeg" alt="FrontDoors" />
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
                         <p>Explore our growing database of curated campsites and leave your own reviews!</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="row row-content align-items-center">
@@ -193,17 +296,18 @@
         </div>
 
         <div class="col row-content align-items-center justify-content-center">
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center p-3">
                 <h2>Find Us on Social Media</h2>
             </div>
             <div class="col d-flex justify-content-center">
                 <div class="media flex-column">
-                    <img class="d-flex mx-auto img-thumbnail" src="images/DisplayWall3.jpeg" alt="Bootsrap Outfitters" />
+                    <img class="d-flex mx-auto img-thumbnail" src="images/DisplayWall3.jpeg"
+                        alt="Bootsrap Outfitters" />
                     <div class="d-flex row row-content justify-content-center">
-                        <div class="d-flex row text-center">
-                        <h3>Weekly and Monthly Deals</h3>
-                        <p>Deals change constantly so keep eyes open for the savings!
-                        </p>
+                        <div class="d-flex row text-center p-4">
+                            <h3>Weekly and Monthly Deals</h3>
+                            <p>Deals change constantly so keep eyes open for the savings!
+                            </p>
                         </div>
                         <div class="container d-flex justify-content-center cards">
                             <div class="card col-md-3 align-self-center" id="card1">
