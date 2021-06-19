@@ -10,7 +10,7 @@ h3 {
 }
 
 h2 {
-  color: #3046c5;
+  color: #fff;
 }
 
 header h2 {
@@ -28,20 +28,18 @@ header h2 {
   padding: 30px;
   background-image: linear-gradient(to right, silver, black, silver);
   color: white;
-  position: absolute;
 }
 
 .row-content {
-  padding: 0 0 50px 0;
+  padding: 0 0 1px 0;
   border-bottom: 1px ridge;
   min-height: 200px;
 }
 
 .navbar {
   background-color: #901cad;
-
   position: absolute;
-  width: 100vw;
+  width: 95vw;
   top: 0;
 }
 
@@ -105,7 +103,7 @@ a {
 .signUp {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  padding-bottom: 10px;
 }
 .textCenter {
   margin-top: 50px;
@@ -147,11 +145,13 @@ iframe {
 
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
   height: 100%;
-  margin: 20px;
+  margin: 0 0 0 20px;
+  padding: 50px 25px 25px 90px;
+  overflow: auto;
 }
 .cards {
   height: 300px;
@@ -222,6 +222,9 @@ iframe {
   color: white;
   border-radius: 5px;
 }
+.row {
+  --bs-gutter-x: 0;
+}
 
 .row:after {
   content: "";
@@ -233,7 +236,6 @@ iframe {
 .column {
   float: left;
   width: 10%;
-
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -249,12 +251,55 @@ iframe {
 }
 .mySlides > img {
   width: auto !important;
-  height: 500px ;
+  height: 500px;
   margin: 15px auto;
   display: flex;
   border-radius: 5px;
   margin-bottom: calc(var(--bs-gutter-x));
 }
 .shopImages {
-  padding: 100px;
+  padding-top: calc(var(--bs-gutter-x));
+  background: radial-gradient(silver, black);
+  color: white;
+}
+.map-container {
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.map-wrapper {
+  height: 100%;
+  width: 40%;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#contact {
+  width: 40%;
+  height: 100%;
+}
+.footerLinks {
+  /* margin-right: 30px; */
+  border-right: 1px solid #ddd;
+  padding: 0 15px;
+}
+
+.footerLinks:last-child {
+  margin-right: 0;
+  border-right: 0;
+}
+
+/* .footerLinks:nth-child(2) {
+  border-color: red;
+} */
+
+.center-footer-links {
+  padding: 0 37%;
+}
+
+.card1,
+.card2 {
+  padding: 0;
 }

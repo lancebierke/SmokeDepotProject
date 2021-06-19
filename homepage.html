@@ -36,7 +36,7 @@
         </div>
     </header>-->
 
-    <div id="reserveModal" class="modal fade" role="dialog">
+    <!-- <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -85,8 +85,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    <!--Main Carousel for Landing Page-->
     <div class="row row-content">
         <div class="col-sm-12 windowWidth">
             <div id="homeCarousel" class="carousel slide" data-ride="carousel">
@@ -133,6 +134,8 @@
             </div>
         </div>
     </div>
+
+    <!--NavBar and Logo-->
     <nav class="navbar navbar-expand-sm opacity">
         <div class="container">
             <a class="navbar-brand" href="homepage.html"><img src="images/SmokeDepotLogo2.jpeg" alt="logo"
@@ -160,8 +163,8 @@
         </div>
     </nav>
 
+    <!--Available Inventory with Picture Switch Display-->
     <div class="carousel-container shopImages">
-
         <div class="row row-content align-items-center">
             <div>
                 <h2 class="text-center pb-3">Available Inventory</h2>
@@ -244,8 +247,8 @@
                             onclick="currentSlide(4)" alt="Northern Lights" />
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="images/burntPipe.jfif" style="width:100%" onclick="currentSlide(5)"
-                            alt="Nature and sunrise" />
+                        <img class="demo cursor" src="images/burntPipe.jfif" style="width:100%"
+                            onclick="currentSlide(5)" alt="Nature and sunrise" />
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="images/clearSkeletonPipe.jfif" style="width:100%"
@@ -280,7 +283,7 @@
             </div> -->
         </div>
 
-        <div class="row row-content align-items-center">
+        <!-- <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
@@ -293,7 +296,7 @@
                     React Lake is a favorite for fly fishers.</p>
             </div>
             <img class="d-flex ml-3 img-thumbnail" src="images/StoreView.jpeg" alt="reactlakethumb" />
-        </div>
+        </div> -->
 
         <div class="col row-content align-items-center justify-content-center">
             <div class="d-flex justify-content-center p-3">
@@ -303,20 +306,20 @@
                 <div class="media flex-column">
                     <img class="d-flex mx-auto img-thumbnail" src="images/DisplayWall3.jpeg"
                         alt="Bootsrap Outfitters" />
-                    <div class="d-flex row row-content justify-content-center">
+                    <div class="d-flex row row-content justify-content-center pb-5">
                         <div class="d-flex row text-center p-4">
                             <h3>Weekly and Monthly Deals</h3>
                             <p>Deals change constantly so keep eyes open for the savings!
                             </p>
                         </div>
                         <div class="container d-flex justify-content-center cards">
-                            <div class="card col-md-3 align-self-center" id="card1">
-                                <div class="container p-4">
+                            <div class="card col-md-3 align-self-center text-dark p-3" id="card1">
+                                <div class="container">
                                     <p>Wear your Las Vegas Raiders Gear in to save 10% off your entire purchase.</p>
                                 </div>
                             </div>
-                            <div class="card col-md-3 align-self-center" id="card2">
-                                <div class="container p-4">
+                            <div class="card col-md-3 align-self-center text-dark p-3" id="card2">
+                                <div class="container">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi
                                         accusamus veritatis tenetur voluptatum?</p>
                                 </div>
@@ -349,17 +352,17 @@
 
     <footer class="site-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
+            <div class="col text-center">
+                <div class="">
                     <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="where.html">Where?</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <ul class="list-unstyled d-flex justify-content-between center-footer-links">
+                        <li class="footerLinks"><a href="shop.html">Shop</a></li>
+                        <li class="footerLinks"><a href="about.html">About</a></li>
+                        <li class="footerLinks"><a href="where.html">Where?</a></li>
+                        <li class="footerLinks"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-sm-5 text-center">
+                <div class="col text-center">
                     <h5>Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
                             class="fa fa-instagram"></i></a>
@@ -370,12 +373,16 @@
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
                             class="fa fa-youtube"></i></a>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link text-light" href="tel:+7023334870"><i class="fa fa-phone"></i>
+                <div class="col text-center">
+                    <a role="button" class="btn btn-link" href="tel:+7023334870"><i class="fa fa-phone"></i>
                         (702) 333-4870</a><br />
-                    <a role="button" class="btn btn-link text-light" href="smokedepot@gmail.com"><i
-                            class="fa fa-envelope-o"></i>
+                    <a role="button" class="btn btn-link" href="smokedepot@gmail.com"><i class="fa fa-envelope-o"></i>
                         smokedepot@gmail.com</a>
+                    <p>5431 S Rainbow Blvd. C-2
+                        <br /> Las Vegas, NV 89118
+                        <br /> Smoke Depot
+                    </p>
+
                 </div>
             </div>
         </div>
